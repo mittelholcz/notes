@@ -1,0 +1,4 @@
+# Notes
+
+Feljegyzések, leginkább magamnak.
+
