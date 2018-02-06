@@ -1,6 +1,15 @@
 # CONDA
 
 
+## Info
+
+* [anaconda](https://anaconda.org/)
+* [download (miniconda)](https://conda.io/miniconda.html)
+* [docs](https://conda.io/docs/index.html)
+* [conda cheatsheet](https://conda.io/docs/_downloads/conda-cheatsheet.pdf) (inaccurate)
+* [conda-forge](https://conda-forge.org/)
+
+
 ## Environments
 
 * list envs
@@ -31,6 +40,10 @@
   ```
   conda env create --name <name> --file myenv.yml
   ```
+* add channel
+  ```
+  conda config --add channels conda-forge
+  ```
 
 
 ## Packages
@@ -42,6 +55,10 @@
 * install
   ```
   conda install <package>
+  ```
+* install from a channel
+  ```
+  conda install --channel <channelname> <package>
   ```
 * update
   ```
@@ -60,9 +77,4 @@
   conda remove --name <env> <package>
   ```
 
-
-## Doc
-
-* [conda cheatsheet](https://conda.io/docs/_downloads/conda-cheatsheet.pdf)
-* [docs](https://conda.io/docs/index.html)
 
