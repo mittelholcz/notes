@@ -30,7 +30,7 @@ a gépek hordozhatók, megoszthatók.
 
 1. [letöltés](https://www.vagrantup.com/downloads.html) (ált. a debian/64-bit
    lesz a jó)
-2. `dpkg install vagrant*.deb`
+2. `dpkg --install vagrant*.deb`
 3. `vagrant plugin install vagrant-cachier` (ez telepíti a
    [*vagrant-cachier*](https://github.com/fgrehm/vagrant-cachier)
    plugint, ami cache-eli a csomagokat, jelentősen gyorsabbá téve az új
