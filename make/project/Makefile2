@@ -1,0 +1,33 @@
+# változók
+
+
+OBJECTS := main.o a.o b.o
+CMD = g++ $< -c -o $@
+
+
+all: clean main
+.PHONY: all
+
+
+main: $(OBJECTS)
+	g++ -o $@ $^
+
+
+main.o: main.cpp a.h b.h
+	$(CMD)
+
+
+a.o: a.cpp a.h
+	$(CMD)
+
+
+b.o: b.cpp b.h
+	$(CMD)
+
+
+clean:
+	$(RM) *.o
+	$(RM) main
+.PHONY: clean
+
+

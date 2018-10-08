@@ -1,0 +1,30 @@
+# minták
+
+
+FUNCTIONS := a.cpp b.cpp
+OBJECTS := main.o $(FUNCTIONS:.cpp=.o)
+CMD = g++ $< -c -o $@
+
+
+all: clean main
+.PHONY: all
+
+
+main: $(OBJECTS)
+	g++ -o $@ $^
+
+
+main.o: main.cpp $(FUNCTIONS:.cpp=.h)
+	$(CMD)
+
+
+$(FUNCTIONS:.cpp=.o): %.o: %.cpp %.h
+	$(CMD)
+
+
+clean:
+	$(RM) *.o
+	$(RM) main
+.PHONY: clean
+
+

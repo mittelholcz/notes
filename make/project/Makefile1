@@ -1,0 +1,29 @@
+# target-ek
+
+
+all: clean main
+.PHONY: all
+
+
+main: main.o a.o b.o
+	g++ -o main main.o a.o b.o
+
+
+main.o: main.cpp a.h b.h
+	g++ main.cpp -c -o main.o
+
+
+a.o: a.cpp a.h
+	g++ a.cpp -c -o a.o
+
+
+b.o: b.cpp b.h
+	g++ b.cpp -c -o b.o
+
+
+clean:
+	rm -f *.o
+	rm -f main
+.PHONY: clean
+
+
