@@ -13238,7 +13238,60 @@ a.anchor-link {
 
 <div class="reveal">
 <div class="slides">
-<section><section>
+<aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="V&#225;zlat">V&#225;zlat<a class="anchor-link" href="#V&#225;zlat">&#182;</a></h1><ol>
+<li>Mi az?<ul>
+<li>mest int.</li>
+<li>gépi tanulás</li>
+<li>felügyelt gépi tanulás</li>
+</ul>
+</li>
+<li>Hogyan működik?<ul>
+<li>dimenziók és terek</li>
+<li>tanulási fázis --&gt; modell --&gt; felhasználás<ul>
+<li>példa: az írisz adatbázis</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Mire lehet használni?<ul>
+<li>nlp, fordítás</li>
+<li>képfelismerés</li>
+<li>ajánlórendszer</li>
+<li>keresés</li>
+<li>tőzsde</li>
+</ul>
+</li>
+<li>Miért (most) lett ennyire felkapott?<ul>
+<li>DL: mi az és hogy működik</li>
+<li>előnyei (fícsörizálás, párhuzamosítás)</li>
+<li>miért most? (gpu, tpu)</li>
+<li>tanítási trükkök (alpha go - önmagán tanítás, google keresés)</li>
+<li>autoencoder</li>
+<li>generálás</li>
+<li>hátrányok<ul>
+<li>feketedoboz (interpretálhatatlanság baj, de amúgy ez előny is)</li>
+<li>még több adat</li>
+<li>átverhetőség</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Mit hoz a jövő?<ul>
+<li>öntudatraébredés, szingularitás vs abakusz (nem)</li>
+<li>elveszi a munkánkat (el)</li>
+</ul>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+</aside><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13385,7 +13438,7 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="2.-Hogyan-m&#369;k&#246;dik?">2. Hogyan m&#369;k&#246;dik?<a class="anchor-link" href="#2.-Hogyan-m&#369;k&#246;dik?">&#182;</a></h1><hr>
 <p>Kérdés: Mi ez a valami? (Muffin vagy csivava?)</p>
-<p>Ötlet: Nézzük meg az ismert tulajdonságait és az alapján szerparáljuk az egyes osztályokat.</p>
+<p>Ötlet: Nézzük meg az ismert tulajdonságait, és az alapján szeparáljuk az egyes osztályokat.</p>
 
 </div>
 </div>
@@ -13466,6 +13519,12 @@ a.anchor-link {
 <td>$...$</td>
 <td>$...$</td>
 </tr>
+<tr>
+<td>$\vdots$</td>
+<td>$\vdots$</td>
+<td>$\vdots$</td>
+</tr>
+
 </table>
 </div>
 </div>
@@ -13475,7 +13534,7 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Folyamat">Folyamat<a class="anchor-link" href="#Folyamat">&#182;</a></h1><ol>
 <li>tanítás: mutatunk ismert példákat (tulajdonságok + osztály): ábrázolás egy sokdimenziós térben</li>
-<li>modell: szerparátorok keresése</li>
+<li>modell: szeparátorok keresése</li>
 <li>használat: ismeretlen példák (csak tulajdonságok): szeparátorok alapján kitaláljuk az osztályt</li>
 </ol>
 
@@ -13558,10 +13617,10 @@ a.anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>szövegfelddolgozás<ul>
-<li>szófaj azonosítás</li>
-<li>tulajdonnév felismerés</li>
-<li>érzelem detekció</li>
+<li>szövegfeldolgozás<ul>
+<li>szófajazonosítás</li>
+<li>tulajdonnév-felismerés</li>
+<li>érzelemdetekció</li>
 </ul>
 </li>
 </ul>
@@ -13574,16 +13633,6 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>gépi fordítás</li>
-</ul>
-
-</div>
-</div>
-</div></div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>chatbot</li>
 </ul>
 
 </div>
@@ -13620,7 +13669,7 @@ a.anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>ajánlórendszer (reklám, hírfolyam, stb.)</li>
+<li>ajánlórendszer (pl. reklám, hírfolyam)</li>
 </ul>
 
 </div>
@@ -13630,7 +13679,7 @@ a.anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>biztonság, átverés azonosítás</li>
+<li>IT biztonság, fraud detection</li>
 </ul>
 
 </div>
@@ -13640,7 +13689,7 @@ a.anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="4.-Mi&#233;rt-(most)-lett-elterjedt?">4. Mi&#233;rt (most) lett elterjedt?<a class="anchor-link" href="#4.-Mi&#233;rt-(most)-lett-elterjedt?">&#182;</a></h1><hr>
-<p><strong><span style="color: lightgrey;">Mi a mélytanulás?</span></strong></p>
+<p>Mi a mélytanulás?</p>
 
 </div>
 </div>
@@ -13656,7 +13705,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Neur&#225;lis-h&#225;l&#243;zat">Neur&#225;lis h&#225;l&#243;zat<a class="anchor-link" href="#Neur&#225;lis-h&#225;l&#243;zat">&#182;</a></h1><p><img alt="neuron" src="https://upload.wikimedia.org/wikipedia/commons/4/46/Colored_neural_network.svg" style="width: 60%;"></p>
+<h1 id="Neur&#225;lis-h&#225;l&#243;zat">Neur&#225;lis h&#225;l&#243;zat<a class="anchor-link" href="#Neur&#225;lis-h&#225;l&#243;zat">&#182;</a></h1><p><img alt="neuron" src="https://cdn-images-1.medium.com/max/1200/1*Gh5PS4R_A5drl5ebd_gNrg@2x.png" style="width: 80%;"></p>
 
 </div>
 </div>
@@ -13666,7 +13715,7 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="El&#337;ny&#246;k">El&#337;ny&#246;k<a class="anchor-link" href="#El&#337;ny&#246;k">&#182;</a></h1><ul>
 <li>tulajdonságok kiválasztása</li>
-<li>párhuzamosíthatóság</li>
+<li>párhuzamosíthatóság (GPU, mátrixszorzás)</li>
 </ul>
 
 </div>
@@ -13675,7 +13724,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Autoencoder">Autoencoder<a class="anchor-link" href="#Autoencoder">&#182;</a></h1><p><img alt="autoencoder" style="width: 70%;" src="https://upload.wikimedia.org/wikipedia/commons/3/37/Autoencoder_schema.png"></p>
+<h1 id="Autoencoder">Autoencoder<a class="anchor-link" href="#Autoencoder">&#182;</a></h1><p><img alt="autoencoder" style="width: 60%;" src="https://upload.wikimedia.org/wikipedia/commons/3/37/Autoencoder_schema.png"></p>
 
 </div>
 </div>
@@ -13694,12 +13743,160 @@ a.anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>zajmentesítés</li>
+<li>zajszűrés</li>
 </ul>
 
 </div>
 </div>
-</div></div></section></section>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#193;lmodnak-e-az-androidok-elektronikus-b&#225;r&#225;nyokkal?-(Deep-Dream)">&#193;lmodnak-e az androidok elektronikus b&#225;r&#225;nyokkal? (<em>Deep Dream</em>)<a class="anchor-link" href="#&#193;lmodnak-e-az-androidok-elektronikus-b&#225;r&#225;nyokkal?-(Deep-Dream)">&#182;</a></h1><p><img alt="felho" src="https://4.bp.blogspot.com/-FPDgxlc-WPU/VYIV1bK50HI/AAAAAAAAAlw/YIwOPjoulcs/s1600/skyarrow.png" style="width: 80%">
+<img alt="reszletek" src="https://3.bp.blogspot.com/-R15_fyB-ZpE/VYIV-Uu9iwI/AAAAAAAAAl4/o3heQNGpVRU/s1600/Funny-Animals.png" style="width: 80%"></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Style-Transfer">Style Transfer<a class="anchor-link" href="#Style-Transfer">&#182;</a></h1><p><img alt="merge" src="https://raw.githubusercontent.com/alexjc/neural-doodle/master/docs/Landscape_example.png" style="widht: 80%;"></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Generative-Adversarial-Network-(GAN)">Generative Adversarial Network (<em>GAN</em>)<a class="anchor-link" href="#Generative-Adversarial-Network-(GAN)">&#182;</a></h1><p><img alt="merge" src="https://cdn-images-1.medium.com/max/1600/0*2Smzp-1MDx2TTwU6.png" style="widht: 80%;"></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="GANPaint-/-GANBrush,-DeepFake">GANPaint / GANBrush, DeepFake<a class="anchor-link" href="#GANPaint-/-GANBrush,-DeepFake">&#182;</a></h1><p><img alt="merge" src="https://www.analyticsindiamag.com/wp-content/uploads/2019/07/Changing-the-season-of-trees.png" style="widht: 80%;"></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="H&#225;tr&#225;nyok">H&#225;tr&#225;nyok<a class="anchor-link" href="#H&#225;tr&#225;nyok">&#182;</a></h1>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>feketedoboz / interpretálhatatlan</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>adatéhség</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>átverhető</li>
+</ul>
+
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#193;tverhet&#337;s&#233;g">&#193;tverhet&#337;s&#233;g<a class="anchor-link" href="#&#193;tverhet&#337;s&#233;g">&#182;</a></h1><p><img alt="merge" src="https://i0.wp.com/bdtechtalks.com/wp-content/uploads/2018/12/ai-adversarial-attack-stop-sign.png?resize=696%2C390&ssl=1" style="widht: 80%;"></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#193;tverhet&#337;s&#233;g">&#193;tverhet&#337;s&#233;g<a class="anchor-link" href="#&#193;tverhet&#337;s&#233;g">&#182;</a></h1><p><img alt="merge" src="https://i0.wp.com/bdtechtalks.com/wp-content/uploads/2018/12/ai-adversarial-attack-turtle.png?resize=696%2C394&ssl=1" style="widht: 80%;"></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="5.-Mit-hoz-a-j&#246;v&#337;?">5. Mit hoz a j&#246;v&#337;?<a class="anchor-link" href="#5.-Mit-hoz-a-j&#246;v&#337;?">&#182;</a></h1><hr>
+<p>Futurológia</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Az-&#246;ntudatra-&#233;bredt-szingularit&#225;s">Az &#246;ntudatra &#233;bredt szingularit&#225;s<a class="anchor-link" href="#Az-&#246;ntudatra-&#233;bredt-szingularit&#225;s">&#182;</a></h1><p><img alt="hal" src="img/hal.svg.png" style="width: 70%;"></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Etikai-probl&#233;m&#225;k">Etikai probl&#233;m&#225;k<a class="anchor-link" href="#Etikai-probl&#233;m&#225;k">&#182;</a></h1>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Kit üssünk ma el?</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Kit engedjünk szabadlábra?</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Kinek adjunk hitelt?</li>
+</ul>
+
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Elveszi-a-munk&#225;nkat!">Elveszi a munk&#225;nkat!<a class="anchor-link" href="#Elveszi-a-munk&#225;nkat!">&#182;</a></h1><p><img alt="hal" src="img/lyon.jpg" style="width: 80%;"></p>
+
+</div>
+</div>
+</div></section></section>
 </div>
 </div>
 
