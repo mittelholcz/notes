@@ -13225,7 +13225,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="1.1.-C&#233;l">1.1. C&#233;l<a class="anchor-link" href="#1.1.-C&#233;l">&#182;</a></h1><p>Hogyan építsünk étteremajánló rendszert? Hogyan építsünk tudásbázis alapú rendszert?</p>
+<h1 id="1.-Tud&#225;salap&#250;-rendszerek">1. Tud&#225;salap&#250; rendszerek<a class="anchor-link" href="#1.-Tud&#225;salap&#250;-rendszerek">&#182;</a></h1><p>Hogyan építsünk étteremajánló rendszert? Hogyan építsünk tudásbázis alapú rendszert?</p>
 <ul>
 <li><em>Van a Babérban vega kaja?</em></li>
 <li><em>Nincs, soha nem is volt!</em></li>
@@ -13238,7 +13238,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="1.2.-Hogyan-m&#369;k&#246;dik?">1.2. Hogyan m&#369;k&#246;dik?<a class="anchor-link" href="#1.2.-Hogyan-m&#369;k&#246;dik?">&#182;</a></h1><ul>
+<h1 id="1.1.-Hogyan-m&#369;k&#246;dik?">1.1. Hogyan m&#369;k&#246;dik?<a class="anchor-link" href="#1.1.-Hogyan-m&#369;k&#246;dik?">&#182;</a></h1><ul>
 <li>Reprezentáljuk a világot<ul>
 <li>a <em>Babér</em> egy étterem</li>
 <li>az éttermekben ételeket szolgálnak fel</li>
@@ -13267,7 +13267,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="1.3.-A-reprezent&#225;ci&#243;val-szembeni-k&#246;vetelm&#233;nyek">1.3. A reprezent&#225;ci&#243;val szembeni k&#246;vetelm&#233;nyek<a class="anchor-link" href="#1.3.-A-reprezent&#225;ci&#243;val-szembeni-k&#246;vetelm&#233;nyek">&#182;</a></h1><ul>
+<h1 id="1.2.-A-reprezent&#225;ci&#243;val-szembeni-k&#246;vetelm&#233;nyek">1.2. A reprezent&#225;ci&#243;val szembeni k&#246;vetelm&#233;nyek<a class="anchor-link" href="#1.2.-A-reprezent&#225;ci&#243;val-szembeni-k&#246;vetelm&#233;nyek">&#182;</a></h1><ul>
 <li><em>Többértelműség</em>: A nyelvi input lehet többértelmű, a reprezentáció nem. Ugyanahhoz a nyelvi inputhoz több (egyértelmű) reprezentáció tartozhat $\to$ dönteni kell.</li>
 <li><em>Kanonikus forma</em>: A fenti fordítottja, ugyanahhoz a reprezentációhoz több nyelvi input is tartozhat. Az alternatív megfogalmazásokat mind ugyanarra a reprezentációra kell fordítani.</li>
 <li><em>Következtetés</em>: A tudásbázisban nem lehet minden kijelentést előre felsorolni, képes kell legyen általános szabályokból egyedi esetekre következtetni.</li>
@@ -13280,7 +13280,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="1.4.-Modell">1.4. Modell<a class="anchor-link" href="#1.4.-Modell">&#182;</a></h1><ul>
+<h1 id="1.3.-Modell">1.3. Modell<a class="anchor-link" href="#1.3.-Modell">&#182;</a></h1><ul>
 <li>Nem az egész világot reprezentáljuk, csak a minket érdeklő részét.</li>
 <li>Halmazelméleti eszközök:<ul>
 <li>domén, vagy <em>(tárgyalási) univerzum</em> ($\mathcal D$)</li>
@@ -13300,23 +13300,6 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="2.-First-Order-Logic">2. First-Order Logic<a class="anchor-link" href="#2.-First-Order-Logic">&#182;</a></h1><p><!-- ![fol](https://mir-s3-cdn-cf.behance.net/project_modules/disp/0bfacc26708351.563593f43c3a5.jpg) -->
 <img src="https://c2.staticflickr.com/8/7656/17109930569_285510d09e_b.jpg" alt="fol"></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="2.1.-Alapfogalmak">2.1. Alapfogalmak<a class="anchor-link" href="#2.1.-Alapfogalmak">&#182;</a></h1><ul>
-<li>mi a logika?</li>
-<li>szintazis?</li>
-<li>szemantika?</li>
-<li>szemantikai értékek?</li>
-<li>extenzionális vs intenzionális logika?</li>
-<li>nullad rendű logika?</li>
-<li>elsőrendű logika?</li>
-<li>magasabb rendű logikák?</li>
-</ul>
 
 </div>
 </div>
@@ -13386,6 +13369,215 @@ $$Ember(szokratesz) \\ \forall x (Ember(x) \to Halando(x)) \\  \Rightarrow Halan
 <li><em>előre láncolás</em>: ha bejön egy új infó, minden lehetséges új következtetést levonunk és ezeket eltároljuk a tudásbázisban. Ha kérdés jön, csak ezekben az eltárolt állításokban kell keresni.</li>
 <li><em>hátra láncolás</em>: csak az új infót tároljuk el. Ha olyan állításra jön kérdés, ami nincs benne expliciten a tudásbázisban, akkor olyan kondicionálist keresünk, aminek az utótagja releváns. Az előtaghoz pedig újabb kondícionális, amíg meg nincs közvetlenül.</li>
 </ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="3.-Esem&#233;nyek-&#233;s-id&#337;">3. Esem&#233;nyek &#233;s id&#337;<a class="anchor-link" href="#3.-Esem&#233;nyek-&#233;s-id&#337;">&#182;</a></h1>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="3.1.-Arit&#225;s-probl&#233;ma">3.1. Arit&#225;s probl&#233;ma<a class="anchor-link" href="#3.1.-Arit&#225;s-probl&#233;ma">&#182;</a></h1><ol>
+<li><em>Iván eszik.</em> -- $Eszik_1(ivan)$</li>
+<li><em>Iván szendvicset eszik.</em> -- $Eszik_2(ivan, szendvics)$</li>
+<li><em>Iván az asztalnál eszik.</em> -- $Eszik_3(ivan, asztal)$</li>
+<li><em>Iván szendvicset eszik az asztalnál.</em> -- $Eszik_4(ivan, szendvics, asztal)$</li>
+<li><em>Iván szendvicset eszik ebédre.</em> -- $Eszik_5(ivan, szendvics, ebéd)$</li>
+<li><em>Iván szendvicset eszik az asztalnál ebédre.</em> -- $Eszik_6(ivan, szendvics, asztal, ebed)$</li>
+</ol>
+<p>Hogyan lehet az első rendben megoldani, hogy ne kelljen sok predikátumot bevezetni ugyan arra?</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="3.2.-neo-davidsoni&#225;nus-esem&#233;nyreprezent&#225;ci&#243;">3.2. <em>neo-davidsoni&#225;nus esem&#233;nyreprezent&#225;ci&#243;</em><a class="anchor-link" href="#3.2.-neo-davidsoni&#225;nus-esem&#233;nyreprezent&#225;ci&#243;">&#182;</a></h1><p>A predikátumok aritása rögzített, de a formalizálás egésze nem az. $\to$ Szétszedhetjük az információkat külön állításokba.</p>
+<p>Esemény változó: $\exists e(Eves(e))$</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>Iván eszik.</em></p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>$\exists e(Eves(e) \land Evoje(e, ivan))$</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>Iván szendvicset eszik.</em></p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>$\exists e(Evés(e) \land Evoje(e, ivan) \land Evettje(e, szendvics))$</p>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="3.2.-folytat&#225;s">3.2. folytat&#225;s<a class="anchor-link" href="#3.2.-folytat&#225;s">&#182;</a></h1><p><em>Iván az asztalnál eszik.</em></p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>$\exists e(Evés(e) \land Evoje(e, ivan) \land Helye(e, asztal))$</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>Iván szendvicset eszik az asztalnál.</em></p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>$\exists e(Evés(e) \land Evoje(e, ivan) \land Evettje(e, szendvics) \land Helye(e, asztal))$</p>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="3.3.-Id&#337;">3.3. Id&#337;<a class="anchor-link" href="#3.3.-Id&#337;">&#182;</a></h1><p>Rendes <em>temporális</em> logika: új mondatoperátorok, bonyolult, nem kell.</p>
+<p>Hogyan lehet első rendben valahogy mégis reprezentálni az események idejét és a változást?</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Eseményreprezentáció kiterjesztése új, idői predikátumokkal.</p>
+<ul>
+<li>$Tartama(esemeny, intervallum)$</li>
+<li>$Resze(intervallum, idopont)$</li>
+<li>$Vege(intervallum, idopont)$</li>
+<li>$Megelozi(idopont_1, idopont_2)$</li>
+</ul>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="3.4.-P&#233;ld&#225;k-az-id&#337;reprezent&#225;ci&#243;ra">3.4. P&#233;ld&#225;k az id&#337;reprezent&#225;ci&#243;ra<a class="anchor-link" href="#3.4.-P&#233;ld&#225;k-az-id&#337;reprezent&#225;ci&#243;ra">&#182;</a></h1><p><em>Iván evett.</em></p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+$$\exists e, i, n(Eves(e) \land Evoje(e, ivan) \land Tartama(e, i), \land Vege(i, n) \land Megelozi(n, now))$$
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>Iván eszik.</em></p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+$$\exists e, i, n(Eves(e) \land Evoje(e, ivan) \land Tartama(e, i), \land Resze(i, now))$$
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="4.-Le&#237;r&#243;-logika">4. Le&#237;r&#243; logika<a class="anchor-link" href="#4.-Le&#237;r&#243;-logika">&#182;</a></h1><ul>
+<li>tudásreprezentációs nyelv</li>
+<li>kifejezőereje erősebb a nulladrendű, de gyengébb az első rendű logikáénál</li>
+<li>ami következtetést le lehet vonni, azt hatékonyan le lehet vonni</li>
+<li>saját jelölés rendszere van (halmazelméletre és elsőrendű logikára emlékeztető)</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="4.1.-Alapfogalmak">4.1. Alapfogalmak<a class="anchor-link" href="#4.1.-Alapfogalmak">&#182;</a></h1><ul>
+<li>vannak:<ul>
+<li>individuumok</li>
+<li>unáris predikátumok (<em>concept</em>)</li>
+<li>bináris predikátumok (<em>role</em>)</li>
+</ul>
+</li>
+<li>terminológia: a kategóriák (fogalmak) összessége</li>
+<li>TBox: fogalmakra vonatkozó tények ($Ember \subseteq Halando$, avagy $\forall x (Ember(x) \to Halando(x))$)</li>
+<li>ABox: individuumokra vonatkozó tények ($Ember(szokratesz)$)</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="4.2.-Hierarcihia">4.2. Hierarcihia<a class="anchor-link" href="#4.2.-Hierarcihia">&#182;</a></h1><ol>
+<li>explicit hierarchia bővítés: egy fogalmat közvetlenül beteszünk egy másik alá (részhalmaz, <em>subsumption</em>)<ul>
+<li>ez csak cimkézés, nincs benne, hogy a felosztás teljes-e vagy hogy diszjunkt-e</li>
+</ul>
+</li>
+<li>implicit hierarchia bővítés: egy fogalomnak megadjuk a definícióját (szükséges és elégséges feltételek)<ul>
+<li>ebben már meg lehet fogalmazni kritériumokat a felosztásra is</li>
+</ul>
+</li>
+</ol>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="4.3.-K&#246;vetkeztet&#233;s">4.3. K&#246;vetkeztet&#233;s<a class="anchor-link" href="#4.3.-K&#246;vetkeztet&#233;s">&#182;</a></h1><p>Két fajta:</p>
+<ol>
+<li>Magában foglalás: egy fogalom magában foglal-e egy másikat</li>
+<li>Példánya-e: egy individuum egy fogalom alá tartozik-e</li>
+</ol>
 
 </div>
 </div>
