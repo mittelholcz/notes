@@ -16,7 +16,7 @@ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poet
 
 ## Új projekt létrehozása
 
-Üres vagy nem létező könvtárnál:
+Üres vagy nem létező könyvtárnál:
 
 ```txt
 poetry new path/to/library
